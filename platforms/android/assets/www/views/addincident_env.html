@@ -1,0 +1,93 @@
+<div data-role="page" id="incident_envpage" data-theme="a">
+
+    <div data-role="header" data-theme="a"  data-position="fixed">
+        <a href="../views/myincident.html" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-active" data-role="button" role="button">Back</a>
+        <h1>Add Incidents<br>(Environment)</br></h1>
+        <!--<a href="dashboard.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Back</a>-->
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+
+        <ul data-role="listview" data-inset="true" id="datetime_details" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <div data-role="fieldcontain">
+                <label1 for="date" class="ui-input-text">Incident Date</label1>
+                <input type="text" name="date" id="date_incident" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" >
+					<label1 for="time" class="ui-input-text">Incident Time</label1>
+					<input type="time" name="time" id="time_incident" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+            </div>
+        </ul>
+
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <div data-role="fieldcontain">
+                <label1 for="select-choice-custom3" class="select ui-select">Incident Location</label1>
+                <select name="select-choice-3" id="select-choice-custom3" data-native-menu="false" tabindex="-1">
+                    <option>Select Location</option>
+                    <option value="20004">1300 Pennsylvania, PA 20004</option>
+                    <option value="80211">2100 Denver, CO 80211</option>
+                    <option value="86429">928 Arivaca, AZ 86429</option>
+                    <option value="55405">1300 Minneapolis, MN 55405</option>
+                    <option value="43606">207 Toledo, OH 43606</option>
+                </select>
+            </div>
+            
+            <div data-role="fieldcontain">
+                <label1 for="select-choice-custom4" class="select ui-select">Work Area</label1>
+                <select name="select-choice-4" id="select-choice-custom4" data-native-menu="false" tabindex="-1">
+                    <option>Select Work Area</option>
+                    <option value="line">Assembly Line</option>
+                    <option value="paint">Paint Shop</option>
+                    <option value="repair">Repair Area</option>
+                    <option value="ins">Inspection Area</option>
+                    <option value="scrap">Scrap Area</option>
+                </select>
+            </div>
+            
+        </ul>
+
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <div data-role="fieldcontain">
+                <label1 for="incident_env" class="select ui-select">Incident Type</label1>
+                <select name="incident_env" id="incident_env" data-native-menu="false" tabindex="-1">
+                    <option>Select Incident Type</option>
+                    <option value="1">Spills/Releases</option>
+                    <option value="2">Emissions</option>
+                    <option value="3">Permit Non Conformance</option>
+                    <option value="4">Legal Notifications</option>
+                    <option value="5">Leaks</option>
+                    <option value="6">Others</option>
+                </select>
+
+                <div data-role="fieldcontain">
+                    <label1 for="textarea">Description of Incident</label1>
+                    <textarea name="textarea" id="textarea" placeholder="Enter Description"></textarea>
+                </div>
+
+            </div>
+
+        </ul>
+
+        <ul data-role="listview" id="list_incident_cls" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <div data-role="fieldcontain">
+                <label1 for="select-choice-custom2" class="select ui-select">Incident Classification</label1>
+                <select name="incident_cls" id="incident_cls" data-native-menu="false" tabindex="-1">
+                    <option>Select Incident Classification</option>
+
+                </select>
+            </div>
+        </ul>
+
+        <ul data-role="listview" id="image_capture_env" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            
+<!--            <a href="#" class="ui-btn ui-icon-camera ui-btn-icon-right ui-shadow ui-corner-all">Upload Image-->
+<!--            <img src="../images/album-bb.jpg" id="image_cap" class="ui-li-thumb">-->
+<!--            </a>-->
+          <a href="#" class="ui-btn ui-icon-camera ui-btn-icon-right ui-shadow ui-corner-all">Upload Image</a>
+        </ul>
+
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a"><button type="submit" data-theme="c" onclick="onCancelEnv()">Cancel</button></div>
+            <div class="ui-block-b"><button type="submit" data-theme="b" onclick="onSubmitEnv()">Submit</button></div>
+        </fieldset>
+    </div>
+
+</div>

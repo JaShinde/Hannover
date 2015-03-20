@@ -1,0 +1,84 @@
+<div data-role="page" id="behaviour" data-theme="a">
+
+    <div data-role="header" data-theme="a"  data-position="fixed">
+        <a href="../views/dashboard.html"  class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-active" data-role="button" role="button"></a>
+        <h1>Add Incidents</br></h1>
+        <!--<a href="dashboard.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Back</a>-->
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <div data-role="fieldcontain">
+                <label1 for="date" class="ui-input-text">Incident Date</label1>
+                <input type="date" name="date" id="date" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+					<label1 for="time" class="ui-input-text">Incident Time</label1>
+					<input type="time" name="time" id="time_incident" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+            </div>
+        </ul>
+
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <div data-role="fieldcontain">
+                <label1 for="select-choice-custom3" class="select ui-select">Incident Location</label1>
+                <select name="select-choice-3" id="select-choice-custom3" data-native-menu="false" tabindex="-1">
+                    <option>Select Location</option>
+                    <option value="20004">1300 Pennsylvania, PA 20004</option>
+                    <option value="rush">2100 Denver, CO 80211</option>
+                    <option value="86429">928 Arivaca, AZ 86429</option>
+                    <option value="55405">1300 Minneapolis, MN 55405</option>
+                    <option value="43606">207 Toledo, OH 43606</option>
+                </select>
+            </div>
+        </ul>
+
+    <ul data-role="listview"  data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <div data-role="fieldcontain">
+            <label1 for="name">Employee Number:</label1>
+            <input type="number" name="empID" id="empID" value=""  />
+        </div>
+    </ul>
+    
+    <ul data-role="listview" data-inset="true" id="emp_details" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <li class="ui-li ui-li-static ui-btn-up-c">Employee Name</li>
+        <li class="ui-li ui-li-static ui-btn-up-c">Employee Age</li>
+        <li class="ui-li ui-li-static ui-btn-up-c">Employee Department</li>
+        <li class="ui-li ui-li-static ui-btn-up-c">Employee Location</li>
+    </ul>
+
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                <div data-role="fieldcontain">
+                    <label1 for="textarea">Activities Observed</label1>
+                    <textarea name="textarea" id="textarea" placeholder="Enter Description"></textarea>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label1 for="textarea">Behavior Affected</label1>
+                    <textarea name="textarea" id="textarea1" placeholder="Enter Description"></textarea>
+                </div>
+        </ul>
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+
+            <fieldset data-role="controlgroup">
+             <label1>Mark Behaviour as</label1>
+                <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+                <label for="checkbox-1">Non Compliance</label>
+                <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
+                <label for="checkbox-2">Ergonomics</label>
+                <input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom" />
+                <label for="checkbox-3">Non Compatibility</label>
+                <input type="checkbox" name="checkbox-4" id="checkbox-4" class="custom" />
+                <label for="checkbox-4">Others</label>
+            </fieldset>
+        </ul>
+
+        <ul data-role="listview" id="image_capture_bev" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <a href="#" class="ui-btn ui-icon-camera ui-btn-icon-right ui-shadow ui-corner-all">Upload Image</a>
+        </ul>
+
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a"><button type="submit" data-theme="c" onclick="onCancelBeh()">Cancel</button></div>
+            <div class="ui-block-b"><button type="submit" data-theme="b" onclick="onSubmitBeh()">Submit</button></div>
+        </fieldset>
+
+    </div>
+</div>

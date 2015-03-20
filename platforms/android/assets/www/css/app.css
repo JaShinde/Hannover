@@ -1,0 +1,176 @@
+@font-face { font-family: 'proxima_novabold'; src: url("../fonts/proximanova-bold-webfont.eot"); src: url("../fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proximanova-bold-webfont.svg#proxima_novabold") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'proxima_nova_rgregular'; src: url("../fonts/proxima_nova_reg-webfont.eot"); src: url("../fonts/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_reg-webfont.woff") format("woff"), url("../fonts/proxima_nova_reg-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_reg-webfont.svg#proxima_nova_rgregular") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'proxima_nova_ltsemibold'; src: url("../fonts/proxima_nova_sbold-webfont.eot"); src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#proxima_nova_ltsemibold") format("svg"); font-weight: normal; font-style: normal; }
+
+/* Change html headers color */
+h1,h2,h3,h4,h5 {
+    color:#0071bc;
+    font-size: 1em;
+    font-family: "proxima_novabold", Helvetica, Arial, sans-serif;
+    white-space: normal;
+}
+
+h2.mc-text-danger,
+h3.mc-text-danger  {
+    color:blue;
+}
+
+.ui-listview>.ui-li-static.ui-li-has-count1{
+    color: #000000;
+    font-family: "proxima_nova_ltsemibold", Helvetica, sans-serif;
+    white-space: normal;
+}
+
+
+.ui-select .ui-btn>span:not(.ui-li-count) {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden!important;
+    white-space: normal;
+}
+/* Change border radius of icon buttons */
+.ui-btn-icon-notext.ui-corner-all {
+    -webkit-border-radius: .3125em;
+    border-radius: .3125em;
+}
+/* Change color of jQuery Mobile page headers */
+.ui-header .ui-title, .ui-footer .ui-title {
+    color:#fff;
+    font-size: 0.8em;
+    font-weight: 100;
+    font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+    white-space: normal;
+}
+/* Center-aligned text */
+.mc-text-center {
+    text-align:center;
+    color:#fff;
+    font-size: 0.8em;
+    font-weight: 100;
+    font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+}
+
+/* Top margin for some elements */
+.mc-top-margin-1-5 {
+    margin-top:1.5em;
+}
+
+
+.ui-listview>li h1, .ui-listview>li h2, .ui-listview>li h3, .ui-listview>li h4, .ui-listview>li h5, .ui-listview>li h6 {
+    white-space: normal;
+}
+
+.ui-mobile label, div.ui-controlgroup-label {
+    /*font-weight: 400;*/
+    font-size: 16px;
+    font-family: "proxima_nova_rgregular",Helvetica,Arial;
+    color: #ffffff;
+    white-space: normal;
+}
+
+.label1 {
+    /*font-weight: 300;*/
+    font-size: 1em;
+    font-family: "proxima_nova_ltsemibold", Helvetica, Arial, sans-serif;
+    color:blueviolet;
+
+}
+
+.label2 {
+    /*font-weight: 300;*/
+    font-size: 1em;
+    font-family: "proxima_novabold", Helvetica, Arial, sans-serif;
+    color:blueviolet;
+
+}
+.legend {
+    /*font-weight: 300;*/
+    font-size: 1em;
+    font-family: "proxima_nova_ltsemibold", Helvetica, Arial, sans-serif;
+    color:blueviolet;
+}
+.ui-input-text, .ui-input-search {
+    margin: .5em 0;
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
+}
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+    background-color: brown;
+    height: 40px;
+}
+
+.ui-block-b,.ui-block-a {
+    border: 0.01em ridge blue;
+    height: 225px;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    padding: 1px;
+}
+
+.back-layout-1 {
+    background: rgba(135,199,227,1);
+    background: -moz-linear-gradient(left, rgba(135,199,227,1) 0%, rgba(26,166,209,1) 0%, rgba(52,174,213,1) 23%, rgba(141,202,226,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(135,199,227,1)), color-stop(0%, rgba(26,166,209,1)), color-stop(23%, rgba(52,174,213,1)), color-stop(100%, rgba(141,202,226,1)));
+    background: -webkit-linear-gradient(left, rgba(135,199,227,1) 0%, rgba(26,166,209,1) 0%, rgba(52,174,213,1) 23%, rgba(141,202,226,1) 100%);
+    background: -o-linear-gradient(left, rgba(135,199,227,1) 0%, rgba(26,166,209,1) 0%, rgba(52,174,213,1) 23%, rgba(141,202,226,1) 100%);
+    background: -ms-linear-gradient(left, rgba(135,199,227,1) 0%, rgba(26,166,209,1) 0%, rgba(52,174,213,1) 23%, rgba(141,202,226,1) 100%);
+    background: linear-gradient(to right, rgba(135,199,227,1) 0%, rgba(26,166,209,1) 0%, rgba(52,174,213,1) 23%, rgba(141,202,226,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87c7e3', endColorstr='#8dcae2', GradientType=1 );
+}
+
+.back-layout-2 {
+    background: rgba(90,155,216,1);
+    background: -moz-linear-gradient(left, rgba(90,155,216,1) 0%, rgba(65,135,211,1) 51%, rgba(53,125,208,1) 76%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(90,155,216,1)), color-stop(51%, rgba(65,135,211,1)), color-stop(76%, rgba(53,125,208,1)));
+    background: -webkit-linear-gradient(left, rgba(90,155,216,1) 0%, rgba(65,135,211,1) 51%, rgba(53,125,208,1) 76%);
+    background: -o-linear-gradient(left, rgba(90,155,216,1) 0%, rgba(65,135,211,1) 51%, rgba(53,125,208,1) 76%);
+    background: -ms-linear-gradient(left, rgba(90,155,216,1) 0%, rgba(65,135,211,1) 51%, rgba(53,125,208,1) 76%);
+    background: linear-gradient(to right, rgba(90,155,216,1) 0%, rgba(65,135,211,1) 51%, rgba(53,125,208,1) 76%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a9bd8', endColorstr='#357dd0', GradientType=1 );
+}
+
+.back-layout-3 {
+    background: rgba(40, 142, 215, 1);
+    background: -moz-linear-gradient(left, rgba(40, 142, 215, 1) 0%, rgba(151, 190, 216, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(40, 142, 215, 1)), color-stop(100%, rgba(151, 190, 216, 1)));
+    background: -webkit-linear-gradient(left, rgba(40, 142, 215, 1) 0%, rgba(151, 190, 216, 1) 100%);
+    background: -o-linear-gradient(left, rgba(40, 142, 215, 1) 0%, rgba(151, 190, 216, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(40, 142, 215, 1) 0%, rgba(151, 190, 216, 1) 100%);
+    background: linear-gradient(to right, rgba(40, 142, 215, 1) 0%, rgba(151, 190, 216, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#288ed7', endColorstr='#97bed8', GradientType=1);
+}
+
+.footer-button-left,.footer-button-right{
+    position: absolute;
+    margin: 0px;
+    top:auto;
+    bottom: 0.24em;
+}
+.footer-button-left{
+    left:0.4em;
+}
+.footer-button-right{
+    right:0.4em;
+}
+
+.ui-listview>.ui-li-has-count>.ui-btn, .ui-listview>.ui-li-static.ui-li-has-count, .ui-listview>.ui-li-divider.ui-li-has-count {
+    padding-right: 2.8125em;
+    color: white;
+    font-family: "proxima_nova_rgregular", Helvetica, sans-serif;
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-active, html .ui-bar-a .ui-btn.ui-btn-active, html .ui-body-a .ui-btn.ui-btn-active, html body .ui-group-theme-a .ui-btn.ui-btn-active, html head+body .ui-btn.ui-btn-a.ui-btn-active, .ui-page-theme-a .ui-checkbox-on:after, html .ui-bar-a .ui-checkbox-on:after, html .ui-body-a .ui-checkbox-on:after, html body .ui-group-theme-a .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-a:after, .ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active, .ui-page-theme-a .ui-slider-track .ui-btn-active, html .ui-bar-a .ui-slider-track .ui-btn-active, html .ui-body-a .ui-slider-track .ui-btn-active, html body .ui-group-theme-a .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-a .ui-btn-active {
+    background-color: #9E2A2A;
+    border-color: #9E2A2A;
+    color: #fff;
+    text-shadow: 0 1px 0 #059;
+}
+
+.ui-input-text, .ui-input-search {
+    margin: .5em 0;
+    border-width: 0px;
+    border-style: none;
+}

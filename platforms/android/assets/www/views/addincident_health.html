@@ -1,0 +1,157 @@
+<div data-role="page" id="incident_health" data-theme="a">
+
+    <div data-role="header" data-theme="a"  data-position="fixed">
+        <a href="../views/myincident.html" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-active" data-role="button" role="button">Back</a>
+        <h1>Add Incidents<br>(Health and Safety)</br></h1>
+        <!--<a href="dashboard.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Back</a>-->
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <div data-role="fieldcontain">
+                <label1 for="date" class="ui-input-text">Incident Date</label1>
+                <input type="date" name="date" id="date" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+					<label1 for="time" class="ui-input-text">Incident Time</label1>
+					<input type="time" name="time" id="time_incident" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+            </div>
+        </ul>
+
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <div data-role="fieldcontain">
+                <label1 for="select-choice-custom3" class="select ui-select">Incident Location</label1>
+                <select name="select-choice-3" id="select-choice-custom3" data-native-menu="false" tabindex="-1">
+                    <option>Select Location</option>
+                    <option value="20004">1300 Pennsylvania, PA 20004</option>
+                    <option value="rush">2100 Denver, CO 80211</option>
+                    <option value="86429">928 Arivaca, AZ 86429</option>
+                    <option value="55405">1300 Minneapolis, MN 55405</option>
+                    <option value="43606">207 Toledo, OH 43606</option>
+                </select>
+         </div>
+			<div data-role="fieldcontain">
+				<label1 for="select-choice-custom4" class="select ui-select">Work Area</label1>
+				<select name="select-choice-4" id="select-choice-custom4" data-native-menu="false" tabindex="-1">
+					<option>Select Work Area</option>
+					<option value="line">Assembly Line</option>
+					<option value="paint">Paint Shop</option>
+					<option value="repair">Repair Area</option>
+					<option value="ins">Inspection Area</option>
+					<option value="scrap">Scrap Area</option>
+				</select>
+			</div>
+        </ul>
+
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+			
+			<div data-role="fieldcontain">
+				<label1 for="textarea">Activity Before</label1>
+				<textarea name="textarea" id="textarea" placeholder="Enter Description"></textarea>
+			</div>
+			
+         <div data-role="fieldcontain">
+            <label1 for="select-choice-custom1" class="select ui-select">Select Incident Type</label1>
+            <select name="select-choice-1" id="select-choice-custom1" data-native-menu="false" tabindex="-1">
+                <option>Select Incident Type</option>
+            <option value="standard">First Aid</option>
+            <option value="rush">Injury</option>
+            <option value="rush">Near Miss</option>
+            <option value="1">Fatality</option>
+            <option value="express">Injury(loss time)</option>
+            <option value="1">Permanent Disability or Loss of Limb</option>
+            <option value="1">Death/Multiple fatality</option>
+            </select>
+
+            <fieldset data-role="controlgroup">
+                <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+                <label for="checkbox-1">Send Alarm in Emergency</label>
+            </fieldset>
+
+            <div data-role="fieldcontain">
+                <label1 for="textarea">Description</label1>
+                <textarea name="textarea" id="textarea" placeholder="Enter Description"></textarea>
+            </div>
+            </div>
+        </ul>
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <div data-role="fieldcontain">
+                <label1 for="select-choice-custom2" class="select ui-select">Incident Classification</label1>
+                <select name="select-choice-2" id="select-choice-custom2" data-native-menu="false" tabindex="-1">
+                    <option>Select Incident Classification</option>
+                    <option value="standard">Injury</option>
+                    <option value="rush">Skin Disorder</option>
+                    <option value="express">Respiratory</option>
+                    <option value="overnight">Poisoning</option>
+                    <option value="overnight">Hearing Loss</option>
+                    <option value="overnight">Other Illness</option>
+                </select>
+            </div>
+                <fieldset data-role="controlgroup">
+                    <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
+                    <label for="checkbox-2">Whether Incident Recordable</label>
+                </fieldset>
+        </ul>
+
+<ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+    <div data-role="fieldcontain">
+        <label1 for="severity" class="select ui-select">Severity</label1>
+        <select name="severity" id="severity" data-native-menu="false" tabindex="-1">
+            <option>Select Severity</option>
+            <option value="0.5">First Aid</option>
+            <option value="1">One day off work</option>
+            <option value="5">Less than 10 days off</option>
+            <option value="10">10+ days off work</option>
+            <option value="275">Permanent disability or loss of limb</option>
+            <option value="6000">Fatality</option>
+            <option value="1800">Multiple fatalities/death</option>
+        </select>
+    </div>
+    
+    <div data-role="fieldcontain">
+        <label1 for="frequency" class="select ui-select">Exposure Frequency</label1>
+        <select name="frequency" id="frequency" data-native-menu="false" tabindex="-1">
+            <option>Select Exposure Frequency</option>
+            <option value="1">Once/Year</option>
+            <option value="11">Once/Month</option>
+            <option value="48">Once/Week</option>
+            <option value="240">Once/Day</option>
+            <option value="2000">Once/Hour</option>
+            <option value="12000">50/Day</option>
+            <option value="24000">100/Day</option>
+            <option value="120000">Once/Minute</option>
+            <option value="1000000">Continuous</option>
+        </select>
+    </div>
+
+    <div data-role="fieldcontain">
+        <label1 for="occurrence" class="select ui-select">Likeness of Future Occurrence</label1>
+        <select name="occurrence" id="occurrence" data-native-menu="false" tabindex="-1">
+            <option>Select Likeness of Future Occurrence</option>
+            <option value="0.0000001">Almost inconceivable</option>
+            <option value="0.000001">Conceivable but very unlikely</option>
+            <option value="0.0000025">Average probability of injury for production assembly processes</option>
+            <option value="0.00001">Remotely Possible</option>
+            <option value="0.0001">Unexpected</option>
+            <option value="0.001">Skilled Human Error Rate</option>
+            <option value="0.01">Likely</option>
+        </select>
+    </div>
+
+
+</ul>
+<ul data-role="listview" id="RPN" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+    <li class="ui-li ui-li-static ui-btn-up-c">RPN(Risk Priority Number)</li>
+    <li class="ui-li ui-li-static ui-btn-up-c">0</li>
+</ul>
+
+        <ul data-role="listview" id="image_capture_health"  data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <a href="#" class="ui-btn ui-icon-camera ui-btn-icon-right ui-shadow ui-corner-all">Upload Image</a>
+        </ul>
+
+        <fieldset class="ui-grid-a">
+            <div class="ui-block-a"><button type="submit" data-theme="c" onclick="onCancelEnv()">Cancel</button></div>
+            <div class="ui-block-b"><button type="submit" data-theme="b" onclick="onSubmitEnv()">Submit</button></div>
+        </fieldset>
+
+    </div>
+</div>
