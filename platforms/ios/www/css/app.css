@@ -151,6 +151,8 @@ h3.mc-text-danger  {
     /*font-family: "Helvetica";*/
 /*}*/
 
+.quitButton { border:none; box-shadow:none; height:14px;}
+
 .back-layout-1 {
     background: rgba(135,199,227,1);
     background: -moz-linear-gradient(left, rgba(135,199,227,1) 0%, rgba(26,166,209,1) 0%, rgba(52,174,213,1) 23%, rgba(141,202,226,1) 100%);

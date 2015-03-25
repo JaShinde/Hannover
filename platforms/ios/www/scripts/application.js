@@ -72,6 +72,13 @@ function onSubmitBeh(){
 function onCancelBeh(){
 	$.mobile.changePage( "dashboard.html", { transition: "slide", changeHash: false });
 };
+
+$( document ).bind( "pageinit", "#loginpage",function() {
+    console.log('login page');
+    $("#email").text("");
+    $("#password").text("");
+});
+
 //pagebeforeshow
 $( document ).bind( "pageinit", "#incident_envpage",function() {
 				   console.log('okokokoko');
