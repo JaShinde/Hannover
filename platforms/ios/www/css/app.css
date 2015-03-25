@@ -47,8 +47,8 @@ h3.mc-text-danger  {
 }
 /* Change color of jQuery Mobile page headers */
 .ui-header .ui-title, .ui-footer .ui-title {
-    color:#fff;
-    font-size: 0.8em;
+    color:#1d1d1d;
+    font-size: 22px;
     font-weight: 100;
     font-style: normal;
     font-family: "HelveticaNeue";
@@ -130,7 +130,8 @@ h3.mc-text-danger  {
     /*border-style: solid;*/
 }
 .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
-    background-color: brown;
+    /*background-color: brown;*/
+    background: none;
     height: 40px;
 }
 
@@ -151,7 +152,31 @@ h3.mc-text-danger  {
     /*font-family: "Helvetica";*/
 /*}*/
 
-.quitButton { border:none; box-shadow:none; height:14px;}
+
+
+
+
+.quitButton { border:none; box-shadow:none; height:20px;}
+
+.round-button {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 1px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    background: none;
+    box-shadow: 0 0 3px gray;
+
+}
+.round-button:hover {
+    background: none;
+}
+.round-button img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
 
 .back-layout-1 {
     background: rgba(135,199,227,1);
