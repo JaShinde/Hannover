@@ -1,8 +1,8 @@
-<div data-role="page" id="incident_health" data-theme="a">
+<div data-role="page" id="incident_health" style="background-image: url('../images/inner_bg_750×1334.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 
     <div data-role="header" data-theme="a"  data-position="fixed">
         <a href="../views/myincident.html" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-active" data-role="button" role="button">Back</a>
-        <h1>Add Incidents<br>(Health and Safety)</br></h1>
+        <h1>ADD INCIDENT</h1>
         <!--<a href="dashboard.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Back</a>-->
     </div><!-- /header -->
 
@@ -10,12 +10,12 @@
 
 <ul data-role="listview" data-inset="true" id="datetime_details_health" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
 	<a href="#" data-role="button" id="date_incident_health" data-icon="grid" data-iconpos="right">Incident Date and Time</a>
-	<li class="ui-li ui-li-static ui-btn-up-c" id="date_time_text_health"></li>
+	<li class="ui-li ui-li-static ui-body-inherit ui-first-child ui-last-child" id="date_time_text_health"></li>
 </ul>
 
-        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset">
             <div data-role="fieldcontain">
-                <label1 for="select-choice-custom3" class="select ui-select">Incident Location</label1>
+                <label for="select-choice-custom3" class="select ui-select">Incident Location</label>
                 <select name="select-choice-3" id="select-choice-custom3" data-native-menu="false" tabindex="-1">
                     <option>Select Location</option>
                     <option value="20004">1300 Pennsylvania, PA 20004</option>
@@ -26,7 +26,7 @@
                 </select>
          </div>
 			<div data-role="fieldcontain">
-				<label1 for="select-choice-custom4" class="select ui-select">Work Area</label1>
+				<label for="select-choice-custom4" class="select ui-select">Work Area</label>
 				<select name="select-choice-4" id="select-choice-custom4" data-native-menu="false" tabindex="-1">
 					<option>Select Work Area</option>
 					<option value="line">Assembly Line</option>
@@ -38,15 +38,15 @@
 			</div>
         </ul>
 
-        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset">
 			
 			<div data-role="fieldcontain">
-				<label1 for="textarea">Activity Before</label1>
-				<textarea name="textarea" id="textarea" placeholder="Enter Description"></textarea>
+				<label for="textarea" class="select ui-select">Activity Before</label>
+				<textarea name="textarea" id="textarea" style="color:#1d1d1d" placeholder="Enter Description"></textarea>
 			</div>
 			
          <div data-role="fieldcontain">
-            <label1 for="select-choice-custom1" class="select ui-select">Select Incident Type</label1>
+            <label for="select-choice-custom1" class="select ui-select">Select Incident Type</label>
             <select name="select-choice-1" id="select-choice-custom1" data-native-menu="false" tabindex="-1">
                 <option>Select Incident Type</option>
             <option value="standard">First Aid</option>
@@ -64,14 +64,14 @@
             </fieldset>
 
             <div data-role="fieldcontain">
-                <label1 for="textarea">Description</label1>
-                <textarea name="textarea" id="textarea" placeholder="Enter Description"></textarea>
+                <label for="textarea" class="select ui-select">Description</label>
+                <textarea name="textarea" id="textarea" placeholder="Enter Description"  style="color:#1d1d1d"></textarea>
             </div>
             </div>
         </ul>
-        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset">
             <div data-role="fieldcontain">
-                <label1 for="select-choice-custom2" class="select ui-select">Incident Classification</label1>
+                <label for="select-choice-custom2" class="select ui-select">Incident Classification</label>
                 <select name="select-choice-2" id="select-choice-custom2" data-native-menu="false" tabindex="-1">
                     <option>Select Incident Classification</option>
                     <option value="standard">Injury</option>
@@ -88,9 +88,9 @@
                 </fieldset>
         </ul>
 
-<ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+<ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset">
     <div data-role="fieldcontain">
-        <label1 for="severity" class="select ui-select">Severity</label1>
+        <label for="severity" class="select ui-select">Severity</label>
         <select name="severity" id="severity" data-native-menu="false" tabindex="-1">
             <option>Select Severity</option>
             <option value="0.5">First Aid</option>
@@ -104,7 +104,7 @@
     </div>
     
     <div data-role="fieldcontain">
-        <label1 for="frequency" class="select ui-select">Exposure Frequency</label1>
+        <label for="frequency" class="select ui-select">Exposure Frequency</label>
         <select name="frequency" id="frequency" data-native-menu="false" tabindex="-1">
             <option>Select Exposure Frequency</option>
             <option value="1">Once/Year</option>
@@ -120,7 +120,7 @@
     </div>
 
     <div data-role="fieldcontain">
-        <label1 for="occurrence" class="select ui-select">Likeness of Future Occurrence</label1>
+        <label for="occurrence" class="select ui-select">Likeness of Future Occurrence</label>
         <select name="occurrence" id="occurrence" data-native-menu="false" tabindex="-1">
             <option>Select Likeness of Future Occurrence</option>
             <option value="0.0000001">Almost inconceivable</option>
@@ -135,9 +135,9 @@
 
 
 </ul>
-<ul data-role="listview" id="RPN" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
-    <li class="ui-li ui-li-static ui-btn-up-c">RPN(Risk Priority Number)</li>
-    <li class="ui-li ui-li-static ui-btn-up-c" id="RPN_text">0</li>
+<ul data-role="listview" id="RPN" data-inset="true" class="ui-listview ui-listview-inset">
+    <li class="ui-li ui-li-static ui-btn-up-c ui-body-inherit ui-first-child">RPN(Risk Priority Number)</li>
+    <li class="ui-li ui-li-static ui-btn-up-c ui-body-inherit ui-first-child" id="RPN_text">0</li>
 </ul>
 
         <ul data-role="listview" id="image_capture_health"  data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
@@ -145,8 +145,8 @@
         </ul>
 
         <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><button type="submit" data-theme="c" onclick="onCancelEnv()">Cancel</button></div>
-            <div class="ui-block-b"><button type="submit" data-theme="b" onclick="onSubmitEnv()">Submit</button></div>
+            <div class="ui-block-a"><button type="submit" class="ui-btn ui-btn-c submit" data-theme="c" onclick="onCancelEnv()">Cancel</button></div>
+            <div class="ui-block-b"><button class="ui-btn ui-btn-b submit" type="submit" data-theme="b" onclick="onSubmitEnv()">Submit</button></div>
         </fieldset>
 
     </div>

@@ -1,21 +1,21 @@
-<div data-role="page" id="behaviour_page" data-theme="a">
+<div data-role="page" id="behaviour_page" style="background-image: url('../images/inner_bg_750×1334.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 
     <div data-role="header" data-theme="a"  data-position="fixed">
         <a href="../views/dashboard.html"  class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-active" data-role="button" role="button"></a>
-        <h1>Add Incidents</br></h1>
+        <h1>ADD INCIDENT</h1>
         <!--<a href="dashboard.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Back</a>-->
     </div><!-- /header -->
 
     <div role="main" class="ui-content">
 
-<ul data-role="listview" data-inset="true" id="datetime_details_beh" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+<ul data-role="listview" data-inset="true" id="datetime_details_beh" class="ui-listview ui-listview-inset">
 	<a href="#" data-role="button" id="date_incident_beh" data-icon="grid" data-iconpos="right">Incident Date and Time</a>
-	<li class="ui-li ui-li-static ui-btn-up-c" id="date_time_text_beh"></li>
+	<li class="ui-li ui-li-static ui-body-inherit ui-first-child ui-last-child" id="date_time_text_beh"></li>
 </ul>
 
-        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset">
             <div data-role="fieldcontain">
-                <label1 for="select-choice-custom3" class="select ui-select">Incident Location</label1>
+                <label for="select-choice-custom3" class="select ui-select">Incident Location</label>
                 <select name="select-choice-3" id="select-choice-custom3" data-native-menu="false" tabindex="-1">
                     <option>Select Location</option>
                     <option value="20004">1300 Pennsylvania, PA 20004</option>
@@ -27,35 +27,35 @@
             </div>
         </ul>
 
-    <ul data-role="listview"  data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+    <ul data-role="listview"  data-inset="true" class="ui-listview ui-listview-inset">
         <div data-role="fieldcontain">
-            <label1 for="name">Employee Number:</label1>
-            <input type="number" name="empID" id="empID" value=""  />
+            <label for="empID" class="select ui-select">Employee Number:</label>
+            <input type="number" name="empID" id="empID" style="color:#1d1d1d" value="" placeholder="Enter Employee Number" />
         </div>
     </ul>
     
-    <ul data-role="listview" data-inset="true" id="emp_details" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+    <ul data-role="listview" data-inset="true" id="emp_details" class="ui-listview ui-listview-inset">
         <li class="ui-li ui-li-static ui-btn-up-c" id="emp_name">Employee Name</li>
         <li class="ui-li ui-li-static ui-btn-up-c" id="emp_age">Employee Age</li>
         <li class="ui-li ui-li-static ui-btn-up-c" id="emp_department">Employee Department</li>
         <li class="ui-li ui-li-static ui-btn-up-c" id="emp_loc">Employee Location</li>
     </ul>
 
-        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset">
                 <div data-role="fieldcontain">
-                    <label1 for="textarea">Activities Observed</label1>
-                    <textarea name="textarea" id="textarea" placeholder="Enter Description"></textarea>
+                    <label for="textarea" class="select ui-select">Activities Observed</label>
+                    <textarea name="textarea" id="textarea" placeholder="Enter Description" style="color:#1d1d1d"></textarea>
                 </div>
 
                 <div data-role="fieldcontain">
-                    <label1 for="textarea">Behavior Affected</label1>
-                    <textarea name="textarea" id="textarea1" placeholder="Enter Description"></textarea>
+                    <label for="textarea" class="select ui-select">Behavior Affected</label>
+                    <textarea name="textarea" id="textarea1" placeholder="Enter Description" style="color:#1d1d1d"></textarea>
                 </div>
         </ul>
-        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset">
 
             <fieldset data-role="controlgroup">
-             <label1>Mark Behaviour as</label1>
+             <label>Mark Behaviour as</label>
                 <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
                 <label for="checkbox-1">Non Compliance</label>
                 <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
@@ -67,13 +67,13 @@
             </fieldset>
         </ul>
 
-        <ul data-role="listview" id="image_capture_bev" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" id="image_capture_bev" data-inset="true" class="ui-listview ui-listview-inset">
             <a href="#" class="ui-btn ui-icon-camera ui-btn-icon-right ui-shadow ui-corner-all">Upload Image</a>
         </ul>
 
         <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><button type="submit" data-theme="c" onclick="onCancelBeh()">Cancel</button></div>
-            <div class="ui-block-b"><button type="submit" data-theme="b" onclick="onSubmitBeh()">Submit</button></div>
+            <div class="ui-block-a"><button class="ui-btn ui-btn-c submit" type="submit" data-theme="c" onclick="onCancelBeh()">Cancel</button></div>
+            <div class="ui-block-b"><button class="ui-btn ui-btn-b submit" type="submit" data-theme="b" onclick="onSubmitBeh()">Submit</button></div>
         </fieldset>
 
     </div>
