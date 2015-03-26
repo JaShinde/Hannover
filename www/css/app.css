@@ -5,11 +5,21 @@
 @font-face { font-family: 'proxima_nova_ltsemibold'; src: url("../fonts/proxima_nova_sbold-webfont.eot"); src: url("../fonts/proxima_nova_sbold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima_nova_sbold-webfont.woff") format("woff"), url("../fonts/proxima_nova_sbold-webfont.ttf") format("truetype"), url("../fonts/proxima_nova_sbold-webfont.svg#proxima_nova_ltsemibold") format("svg"); font-weight: normal; font-style: normal; }
 
 /* Change html headers color */
-h1,h2,h3,h4,h5 {
+h1,h3,h4,h5 {
     color:#0071bc;
     font-size: 1em;
     font-family: "proxima_novabold", Helvetica, Arial, sans-serif;
     white-space: normal;
+}
+
+.ui-header .ui-title.h2{
+    color:#aeaeae;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: normal;
+    font-family: "HelveticaNeue";
+    white-space: normal;
+    text-align: center;
 }
 
 h2.mc-text-danger,
@@ -48,11 +58,12 @@ h3.mc-text-danger  {
 /* Change color of jQuery Mobile page headers */
 .ui-header .ui-title, .ui-footer .ui-title {
     color:#1d1d1d;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 100;
     font-style: normal;
     font-family: "HelveticaNeue";
     white-space: normal;
+    text-align: left;
 }
 
 
@@ -131,11 +142,13 @@ h3.mc-text-danger  {
     color: #C7BCBC;
 }
 
-.label1 {
+.select.ui-select {
     /*font-weight: 300;*/
-    font-size: 1em;
-    font-family: "proxima_nova_ltsemibold", Helvetica, Arial, sans-serif;
-    color:blueviolet;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    color:#5e5e5e;
 
 }
 
@@ -281,17 +294,60 @@ h3.mc-text-danger  {
 }
 
 .ui-bar-a{
-
     border-width: 0px;
+}
+
+.ui-btn.ui-btn-b.submit:hover{
+    background-color: #d23838;
+    border-color: #d23838;
+    color: #ffffff;
+    font-style: normal;
+    font-family: "HelveticaNeue-Light";
+    font-size: 16.5px;
+    font-weight: 100;
+    border-width: 0px;
+}
+
+.ui-btn.ui-btn-c.submit{
+    background-color: transparent;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    color:#1d1d1d;
+    font-size: 16px;
+    font-weight: 100;
+    border-width: 1px solid;
+    border-color:  #b9b9b9;
+
+}
+.ui-btn.ui-btn-b.submit{
+
+    background-color: #d23838;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    color:#ffffff;
+    font-size: 16.5px;
+    font-weight: 100;
+    border-width: 0px;
+}
+
+.ui-page-theme-a .ui-body-inherit{
+    background-color: #d23838;
+    color: #ffffff;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    font-weight: 100;
+    text-shadow: 0 1px 0 #f3f3f3
 }
 
 .ui-page-theme-a .ui-btn{
     background-color: #f6f6f6;
     border-color: #f6f6f6;
-    color: #333;
+    color: #1d1d1d;
     text-shadow: 0 1px 0 #f3f3f3;
     border: 1px solid #f6f6f6;
-
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    font-weight: 100;
 }
 
 .ui-input-text, .ui-input-search {

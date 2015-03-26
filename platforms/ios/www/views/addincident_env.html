@@ -1,21 +1,21 @@
-<div data-role="page" id="incident_envpage" data-theme="a">
+<div data-role="page" id="incident_envpage" style="background-image: url('../images/inner_bg_750×1334.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 
     <div data-role="header" data-theme="a"  data-position="fixed">
         <a href="../views/myincident.html" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-active" data-role="button" role="button">Back</a>
-        <h1>Add Incidents<br>(Environment)</br></h1>
+        <h1>ADD INCIDENT</h1>
         <!--<a href="dashboard.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Back</a>-->
     </div><!-- /header -->
 
     <div role="main" class="ui-content">
 
-        <ul data-role="listview" data-inset="true" id="datetime_details" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" data-inset="true" id="datetime_details" class="ui-listview ui-listview-inset ">
                 <a href="#" data-role="button" id="date_incident" data-icon="grid" data-iconpos="right">Incident Date and Time</a>
-				<li class="ui-li ui-li-static ui-btn-up-c" id="date_time_text"></li>
+				<li class="ui-li ui-li-static  ui-first-child ui-last-child" id="date_time_text"></li>
         </ul>
 
-        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset">
             <div data-role="fieldcontain">
-                <label1 for="select-choice-custom3" class="select ui-select">Incident Location</label1>
+                <label for="select-choice-custom3" class="select ui-select">Incident Location</label>
                 <select name="select-choice-3" id="select-choice-custom3" data-native-menu="false" tabindex="-1">
                     <option>Select Location</option>
                     <option value="20004">1300 Pennsylvania, PA 20004</option>
@@ -27,7 +27,7 @@
             </div>
             
             <div data-role="fieldcontain">
-                <label1 for="select-choice-custom4" class="select ui-select">Work Area</label1>
+                <label for="select-choice-custom4" class="select ui-select">Work Area</label>
                 <select name="select-choice-4" id="select-choice-custom4" data-native-menu="false" tabindex="-1">
                     <option>Select Work Area</option>
                     <option value="line">Assembly Line</option>
@@ -40,9 +40,9 @@
             
         </ul>
 
-        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset">
             <div data-role="fieldcontain">
-                <label1 for="incident_env" class="select ui-select">Incident Type</label1>
+                <label for="incident_env" class="select ui-select">Incident Type</label>
                 <select name="incident_env" id="incident_env" data-native-menu="false" tabindex="-1">
                     <option>Select Incident Type</option>
                     <option value="1">Spills/Releases</option>
@@ -54,17 +54,17 @@
                 </select>
 
                 <div data-role="fieldcontain">
-                    <label1 for="textarea">Description of Incident</label1>
-                    <textarea name="textarea" id="textarea" placeholder="Enter Description"></textarea>
+                    <label for="textarea" class="select ui-select">Description of Incident</label>
+                    <textarea name="textarea"  id="textarea" placeholder="Enter Description" style="color:#1d1d1d"></textarea>
                 </div>
 
             </div>
 
         </ul>
 
-        <ul data-role="listview" id="list_incident_cls" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" id="list_incident_cls" data-inset="true" class="ui-listview ui-listview-inset ">
             <div data-role="fieldcontain">
-                <label1 for="select-choice-custom2" class="select ui-select">Incident Classification</label1>
+                <label for="incident_cls" class="select ui-select">Incident Classification</label>
                 <select name="incident_cls" id="incident_cls" data-native-menu="false" tabindex="-1">
                     <option>Select Incident Classification</option>
 
@@ -72,17 +72,17 @@
             </div>
         </ul>
 
-        <ul data-role="listview" id="image_capture_env" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul data-role="listview" id="image_capture_env" data-inset="true" class="ui-listview ui-listview-inset ">
             
 <!--            <a href="#" class="ui-btn ui-icon-camera ui-btn-icon-right ui-shadow ui-corner-all">Upload Image-->
 <!--            <img src="../images/album-bb.jpg" id="image_cap" class="ui-li-thumb">-->
 <!--            </a>-->
-          <a href="#" class="ui-btn ui-icon-camera ui-btn-icon-right ui-shadow ui-corner-all">Upload Image</a>
+          <a href="#" class="ui-btn ui-icon-camera ui-btn-icon-right">Upload Image</a>
         </ul>
 
         <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><button type="submit" data-theme="c" onclick="onCancelEnv()">Cancel</button></div>
-            <div class="ui-block-b"><button type="submit" data-theme="b" onclick="onSubmitEnv()">Submit</button></div>
+            <div class="ui-block-a"><button class="ui-btn ui-btn-c submit" type="submit" data-theme="c" onclick="onCancelEnv()">Cancel</button></div>
+            <div class="ui-block-b"><button class="ui-btn ui-btn-b submit" type="submit" data-theme="b" onclick="onSubmitEnv()">Submit</button></div>
         </fieldset>
     </div>
 
