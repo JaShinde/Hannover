@@ -48,7 +48,7 @@ h3.mc-text-danger  {
 /* Change color of jQuery Mobile page headers */
 .ui-header .ui-title, .ui-footer .ui-title {
     color:#1d1d1d;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 100;
     font-style: normal;
     font-family: "HelveticaNeue";
