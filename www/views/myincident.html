@@ -1,39 +1,52 @@
-<div data-role="page" id="incidentpage" data-theme="a">
+<div data-role="page" id="incidentpage" style="background-image: url('../images/inner_bg_750×1334.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 
     <div data-role="header" data-theme="a"  data-position="fixed">
         <a href="../views/dashboard.html" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-active" data-role="button" role="button">Back</a>
-        <h1>My Incidents</h1>
+        <h1>MY INCIDENTS</h1>
 
     </div><!-- /header -->
 
     <div role="main" class="ui-content">
-    <ul data-role="listview" data-split-icon="plus" data-theme="a" data-split-theme="b" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-a">
-        <li class="ui-li-has-alt ui-first-child">
-            <a href="#" class="ui-btn"><h2>Incident Capture</h2>(Heath and Safety)</a>
-            <a href="../views/addincident_health.html" data-transition="slide" class="ui-btn ui-btn-icon-notext ui-icon-plus ui-btn-b"></a>
-        </li>
-        <li class="ui-li-has-alt ui-last-child">
-            <a href="#" class="ui-btn"><h2>Incident Capture</h2>(Environment)</a>
-            <a href="../views/addincident_env.html" data-transition="slide" class="ui-btn ui-btn-icon-notext ui-icon-plus ui-btn-a"></a>
-        </li>
-    </ul>
+
+        <div class="round-button" style="margin-top: 25px;margin-left:85px;">
+            <a href="../views/addincident_health.html" data-transition="slide">
+                <img src="../images/incident_capture_health_button.png"  />
+            </a>
+        </div>
+
+        <div class="round-button" style="margin-top: 35px; margin-left:85px">
+            <a href="../views/addincident_env.html" data-transition="slide">
+                <img src="../images/incident_capture_environment_button.png"  />
+            </a>
+        </div>
+
+    <!--<ul data-role="listview" data-split-icon="plus" data-theme="a" data-split-theme="b" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-a">-->
+        <!--<li class="ui-li-has-alt ui-first-child">-->
+            <!--<a href="#" class="ui-btn"><h2>Incident Capture</h2>(Heath and Safety)</a>-->
+            <!--<a href="../views/addincident_health.html" data-transition="slide" class="ui-btn ui-btn-icon-notext ui-icon-plus ui-btn-b"></a>-->
+        <!--</li>-->
+        <!--<li class="ui-li-has-alt ui-last-child">-->
+            <!--<a href="#" class="ui-btn"><h2>Incident Capture</h2>(Environment)</a>-->
+            <!--<a href="../views/addincident_env.html" data-transition="slide" class="ui-btn ui-btn-icon-notext ui-icon-plus ui-btn-a"></a>-->
+        <!--</li>-->
+    <!--</ul>-->
 
         <ul data-role="listview" data-inset="true" id="incidentDetails" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
             <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-li-has-count ui-first-child">Apr 8, 2015 <span class="ui-li-count ui-body-inherit">2</span></li>
-            <li><a href="../views/incident_details_HSX123.html"  data-transition="slide" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-                <h2>Incident ID: HSX123</h2>
+            <li><a href="../views/incident_details_HSX123.html"  data-transition="slide" class="ui-btn">
+                <h2>Incident ID: INC3093</h2>
 <!--                <p><strong>Health and Safety</strong></p>-->
                 <p>2100 Denver, CO 80211</p>
                 <p class="ui-li-aside"><strong>6:24</strong>PM</p>
             </a></li>
-            <li><a href="../views/incident_details_EX127.html" data-transition="slide" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <li><a href="../views/incident_details_EX127.html" data-transition="slide" class="ui-btn">
                 <h2>Incident ID: EX127</h2>
 <!--                <p><strong>Environment</strong></p>-->
                 <p>928 Arivaca, AZ 86429</p>
                 <p class="ui-li-aside"><strong>9:18</strong>AM</p>
             </a></li>
             <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-li-has-count">Feb 2, 2015 <span class="ui-li-count ui-body-inherit">1</span></li>
-            <li class="ui-last-child"><a href="../views/incident_details_EX235.html"  data-transition="slide" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <li class="ui-last-child"><a href="../views/incident_details_EX235.html"  data-transition="slide" class="ui-btn">
                 <h2>Incident ID: EX235</h2>
 <!--                <p><strong>XXXXXXXXXX </strong></p>-->
                 <p>1300 Minneapolis, MN 55405</p>

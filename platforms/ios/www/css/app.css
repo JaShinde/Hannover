@@ -90,7 +90,7 @@ h3.mc-text-danger  {
 }
 
 
-.ui-listview>li h1, .ui-listview>li h2, .ui-listview>li h3, .ui-listview>li h4, .ui-listview>li h5, .ui-listview>li h6 {
+.ui-listview>li h1,.ui-listview>li h3, .ui-listview>li h4, .ui-listview>li h5, .ui-listview>li h6 {
     white-space: normal;
 }
 
@@ -101,6 +101,34 @@ h3.mc-text-danger  {
     font-style: normal;
     color: #ffffff;
     white-space: normal;
+}
+.ui-listview>li h2{
+
+    white-space: normal;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    font-weight: 100;
+    color: #1d1d1d;
+    font-size: 18px;
+}
+
+.ui-listview>li p {
+    font-size: .75em;
+    font-weight: 0;
+    white-space: normal;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    color: #1d1d1d;
+}
+
+.ui-listview .ui-li-aside{
+
+    font-size: .75em;
+    font-weight: 100;
+    white-space: normal;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    color: #C7BCBC;
 }
 
 .label1 {
@@ -159,8 +187,8 @@ h3.mc-text-danger  {
 .quitButton { border:none; box-shadow:none; height:20px;}
 
 .round-button {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     padding-bottom: 1px;
     border-radius: 50%;
     border: 1px solid #ffffff;
@@ -174,8 +202,8 @@ h3.mc-text-danger  {
 }
 .round-button img {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
 }
 
 .back-layout-1 {
@@ -226,8 +254,23 @@ h3.mc-text-danger  {
 
 .ui-listview>.ui-li-has-count>.ui-btn, .ui-listview>.ui-li-static.ui-li-has-count, .ui-listview>.ui-li-divider.ui-li-has-count {
     padding-right: 2.8125em;
-    color: white;
-    font-family: "proxima_nova_rgregular", Helvetica, sans-serif;
+    color: #1d1d1d;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    font-size: 20px;
+    font-weight:100;
+}
+
+.ui-li-count.ui-body-inherit{
+
+    background-color: #d23838;
+    border-color: #ddd;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #f3f3f3;
+    border-radius: 50px;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    font-size: 18px;
 }
 
 .ui-page-theme-a .ui-btn.ui-btn-active, html .ui-bar-a .ui-btn.ui-btn-active, html .ui-body-a .ui-btn.ui-btn-active, html body .ui-group-theme-a .ui-btn.ui-btn-active, html head+body .ui-btn.ui-btn-a.ui-btn-active, .ui-page-theme-a .ui-checkbox-on:after, html .ui-bar-a .ui-checkbox-on:after, html .ui-body-a .ui-checkbox-on:after, html body .ui-group-theme-a .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-a:after, .ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active, .ui-page-theme-a .ui-slider-track .ui-btn-active, html .ui-bar-a .ui-slider-track .ui-btn-active, html .ui-body-a .ui-slider-track .ui-btn-active, html body .ui-group-theme-a .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-a .ui-btn-active {
@@ -235,6 +278,20 @@ h3.mc-text-danger  {
     border-color: #9E2A2A;
     color: #fff;
     text-shadow: 0 1px 0 #059;
+}
+
+.ui-bar-a{
+
+    border-width: 0px;
+}
+
+.ui-page-theme-a .ui-btn{
+    background-color: #f6f6f6;
+    border-color: #f6f6f6;
+    color: #333;
+    text-shadow: 0 1px 0 #f3f3f3;
+    border: 1px solid #f6f6f6;
+
 }
 
 .ui-input-text, .ui-input-search {

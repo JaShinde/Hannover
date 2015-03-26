@@ -17,6 +17,16 @@ h3.mc-text-danger  {
     color:blue;
 }
 
+.h1-header{
+    color:#ffffff !important;
+    font-size: 1em;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    white-space: normal;
+}
+
+
+
 .ui-listview>.ui-li-static.ui-li-has-count1{
     color: #000000;
     font-family: "proxima_nova_ltsemibold", Helvetica, sans-serif;
@@ -37,12 +47,15 @@ h3.mc-text-danger  {
 }
 /* Change color of jQuery Mobile page headers */
 .ui-header .ui-title, .ui-footer .ui-title {
-    color:#fff;
-    font-size: 0.8em;
+    color:#1d1d1d;
+    font-size: 18px;
     font-weight: 100;
-    font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-family: "HelveticaNeue";
     white-space: normal;
 }
+
+
 /* Center-aligned text */
 .mc-text-center {
     text-align:center;
@@ -52,24 +65,70 @@ h3.mc-text-danger  {
     font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
 }
 .ui-li ui-li-static ui-btn-up-c{
-	white-space = normal;
+	white-space: normal;
 }
 /* Top margin for some elements */
 .mc-top-margin-1-5 {
     margin-top:1.5em;
 }
 
+.sr-only{
+    position:absolute;
+    width:100%;
+    height:50px;
+    text-align: center;
+    top: 20%;
+    left: 10px;
+   }
+.sr-only-email{
+    position:absolute;
+    width:100%;
+    height:50px;
+    text-align: center;
+    top: 200px;
+    left: 10px;
+}
 
-.ui-listview>li h1, .ui-listview>li h2, .ui-listview>li h3, .ui-listview>li h4, .ui-listview>li h5, .ui-listview>li h6 {
+
+.ui-listview>li h1,.ui-listview>li h3, .ui-listview>li h4, .ui-listview>li h5, .ui-listview>li h6 {
     white-space: normal;
 }
 
 .ui-mobile label, div.ui-controlgroup-label {
     /*font-weight: 400;*/
     font-size: 16px;
-    font-family: "proxima_nova_rgregular",Helvetica,Arial;
+    font-family: "HelveticaNeue";
+    font-style: normal;
     color: #ffffff;
     white-space: normal;
+}
+.ui-listview>li h2{
+
+    white-space: normal;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    font-weight: 100;
+    color: #1d1d1d;
+    font-size: 18px;
+}
+
+.ui-listview>li p {
+    font-size: .75em;
+    font-weight: 0;
+    white-space: normal;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    color: #1d1d1d;
+}
+
+.ui-listview .ui-li-aside{
+
+    font-size: .75em;
+    font-weight: 100;
+    white-space: normal;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    color: #C7BCBC;
 }
 
 .label1 {
@@ -99,7 +158,8 @@ h3.mc-text-danger  {
     /*border-style: solid;*/
 }
 .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
-    background-color: brown;
+    /*background-color: brown;*/
+    background: none;
     height: 40px;
 }
 
@@ -110,6 +170,40 @@ h3.mc-text-danger  {
     font-size: 1em;
     text-align: left;
     padding: 1px;
+}
+
+/*.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{*/
+
+    /*color: #FFFFFF;*/
+    /*text-shadow: 0 1px 0 #f3f3f3;*/
+    /*font-style: normal;*/
+    /*font-family: "Helvetica";*/
+/*}*/
+
+
+
+
+
+.quitButton { border:none; box-shadow:none; height:20px;}
+
+.round-button {
+    width: 110px;
+    height: 110px;
+    padding-bottom: 1px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    background: none;
+    box-shadow: 0 0 3px gray;
+
+}
+.round-button:hover {
+    background: none;
+}
+.round-button img {
+    display: block;
+    width: 110px;
+    height: 110px;
 }
 
 .back-layout-1 {
@@ -160,8 +254,23 @@ h3.mc-text-danger  {
 
 .ui-listview>.ui-li-has-count>.ui-btn, .ui-listview>.ui-li-static.ui-li-has-count, .ui-listview>.ui-li-divider.ui-li-has-count {
     padding-right: 2.8125em;
-    color: white;
-    font-family: "proxima_nova_rgregular", Helvetica, sans-serif;
+    color: #1d1d1d;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    font-size: 20px;
+    font-weight:100;
+}
+
+.ui-li-count.ui-body-inherit{
+
+    background-color: #d23838;
+    border-color: #ddd;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #f3f3f3;
+    border-radius: 50px;
+    font-family: "HelveticaNeue-Light";
+    font-style: normal;
+    font-size: 18px;
 }
 
 .ui-page-theme-a .ui-btn.ui-btn-active, html .ui-bar-a .ui-btn.ui-btn-active, html .ui-body-a .ui-btn.ui-btn-active, html body .ui-group-theme-a .ui-btn.ui-btn-active, html head+body .ui-btn.ui-btn-a.ui-btn-active, .ui-page-theme-a .ui-checkbox-on:after, html .ui-bar-a .ui-checkbox-on:after, html .ui-body-a .ui-checkbox-on:after, html body .ui-group-theme-a .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-a:after, .ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active, .ui-page-theme-a .ui-slider-track .ui-btn-active, html .ui-bar-a .ui-slider-track .ui-btn-active, html .ui-body-a .ui-slider-track .ui-btn-active, html body .ui-group-theme-a .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-a .ui-btn-active {
@@ -171,8 +280,34 @@ h3.mc-text-danger  {
     text-shadow: 0 1px 0 #059;
 }
 
+.ui-bar-a{
+
+    border-width: 0px;
+}
+
+.ui-page-theme-a .ui-btn{
+    background-color: #f6f6f6;
+    border-color: #f6f6f6;
+    color: #333;
+    text-shadow: 0 1px 0 #f3f3f3;
+    border: 1px solid #f6f6f6;
+
+}
+
 .ui-input-text, .ui-input-search {
     margin: .5em 0;
     border-width: 0px;
     border-style: none;
+}
+
+.ui-btn-submit{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+
 }
