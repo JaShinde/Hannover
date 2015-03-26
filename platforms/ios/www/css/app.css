@@ -114,7 +114,7 @@ h3.mc-text-danger  {
 
 .ui-listview>li p {
     font-size: .75em;
-    font-weight: 0;
+    font-weight: 100;
     white-space: normal;
     font-family: "HelveticaNeue-Light";
     font-style: normal;
@@ -266,11 +266,11 @@ h3.mc-text-danger  {
     background-color: #d23838;
     border-color: #ddd;
     color: #ffffff;
-    text-shadow: 0 1px 0 #f3f3f3;
     border-radius: 50px;
     font-family: "HelveticaNeue-Light";
     font-style: normal;
-    font-size: 18px;
+    font-size: 10px;
+    font-weight: 100;
 }
 
 .ui-page-theme-a .ui-btn.ui-btn-active, html .ui-bar-a .ui-btn.ui-btn-active, html .ui-body-a .ui-btn.ui-btn-active, html body .ui-group-theme-a .ui-btn.ui-btn-active, html head+body .ui-btn.ui-btn-a.ui-btn-active, .ui-page-theme-a .ui-checkbox-on:after, html .ui-bar-a .ui-checkbox-on:after, html .ui-body-a .ui-checkbox-on:after, html body .ui-group-theme-a .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-a:after, .ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active, .ui-page-theme-a .ui-slider-track .ui-btn-active, html .ui-bar-a .ui-slider-track .ui-btn-active, html .ui-body-a .ui-slider-track .ui-btn-active, html body .ui-group-theme-a .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-a .ui-btn-active {
