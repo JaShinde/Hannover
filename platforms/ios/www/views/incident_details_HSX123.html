@@ -1,62 +1,78 @@
-<div data-role="page" id="incident_details_HSX123" data-theme="a">
+<div data-role="page" id="incident_details_HSX123" style="background-image: url('../images/inner_bg_750×1334.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
 
     <div data-role="header" data-theme="a"  data-position="fixed">
         <a href="myincident.html" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all ui-btn-active" data-role="button" role="button">Back</a>
-        <h1>Incident ID HSX123</h1>
+        <h1>Details</h1><span>Incident ID: INC3093 </span>
         <!--<a href="dashboard.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Back</a>-->
     </div><!-- /header -->
 
     <div role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true" id="incidentDetails1" class="ui-listview ui-listview-inset">
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Incident Location</li>
+            <li><a href="#" class="ui-btn">
+                <h2>Munich</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Region Name</li>
+            <li><a href="#" class="ui-btn">
+                <h2>EMEA</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Work Area</li>
+            <li><a href="#" class="ui-btn">
+                <h2>Assembly Line</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Incident Date and Time</li>
+            <li><a href="#" class="ui-btn">
+                <h2>Apr 8, 2015</h2><span>6:24 PM</span>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Activity Before</li>
+            <li><a href="#" class="ui-btn">
+                <h2>Engine mounting</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Incident Type</li>
+            <li><a href="#" class="ui-btn">
+                <h2>Loss Time Injury</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Description</li>
+            <li><a href="#" class="ui-btn">
+                <h2>Employee was mounting engine to the vehicle when it started shaking due to faulty mount. The employee had a strong blow and fell down hurting his knee</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Incident Classification</li>
+            <li><a href="#" class="ui-btn">
+                <h2>Injury</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Severity</li>
+            <li><a href="#" class="ui-btn">
+                <h2>One Day Off Work</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Exposure Frequency</li>
+            <li><a href="#" class="ui-btn">
+                <h2>Once/Month</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Likeness of Future Occurrence</li>
+            <li><a href="#" class="ui-btn">
+                <h2>Conceivable but very unlikely</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Risk Priority Number (RPN)</li>
+            <li><a href="#" class="ui-btn">
+                <h2>0.000011</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Claim Cost</li>
+            <li><a href="#" class="ui-btn">
+                <h2>$108930 USD</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Investigation Officer</li>
+            <li><a href="#" class="ui-btn">
+                <h2>Barry Allen</h2>
+            </a></li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child ui-last-child">Investigation Status</li>
+            <li><a href="#" class="ui-btn">
+                <h2>Closed</h2>
+            </a></li>
+         </ul>
 
-<ul data-role="listview" class="ui-listview">
-	<div data-role="fieldcontain">
-	<li><label1>&nbsp;Incident Location</label1></li>
-	<li><label2>&nbsp;2100 Denver, CO 80211</label2></li>
-	</div>
-	<div data-role="fieldcontain">
-		<li><label1>&nbsp; Work Area</label1></li>
-		<li><label2>&nbsp; Assembly Line</label2></li>
-	</div>
-	<div data-role="fieldcontain">
-		<li><label1>&nbsp;Incident Date and Time</label1></li>
-		<li><label2>&nbsp; Apr 8, 2015</label2></li>
-	</div>
-    <div data-role="fieldcontain">
-		<li><label1>&nbsp;Activity Before</label1></li>
-		<li><label2>&nbsp;Engine mounting</label2></li>
-	</div>
-	<div data-role="fieldcontain">
-		<li><label1>&nbsp;Incident Type</label1></li>
-		<li><label2>&nbsp; Loss Time Injury</label2></li>
-	</div>
-	<div data-role="fieldcontain">
-		<li><label1>&nbsp;Description</label1></li>
-		<li><label2>&nbsp;Employee was mounting engine to the vehicle when it started shaking due to faulty mount. The employee had a strong blow and fell down hurting his knee.</label2></li>
-	</div>
-	<div data-role="fieldcontain">
-		<li><label1>&nbsp;Incident Classification</label1></li>
-		<li><label2>&nbsp; Injury</label2></li>
-	</div>
-	<div data-role="fieldcontain">
-		<li><label1>&nbsp;Severity</label1></li>
-		<li><label2>&nbsp; One Day Off Work</label2></li>
-	</div>
-	<div data-role="fieldcontain">
-		<li><label1>&nbsp;Exposure Frequency</label1></li>
-		<li><label2>&nbsp; Once/Month</label2></li>
-	</div>
-	<div data-role="fieldcontain">
-		<li><label1>&nbsp;Likeness of Future Occurrence</label1></li>
-		<li><label2>&nbsp; Conceivable but very unlikely</label2></li>
-	</div>
-	<div data-role="fieldcontain">
-		<li><label1>&nbsp;Risk Priority Number (RPN)</label1></li>
-		<li><label2>&nbsp; 0.000011</label2></li>
-	</div>
-</ul>
+
 
     </div>
-
 
 </div>
 

@@ -20,6 +20,7 @@ h1,h3,h4,h5 {
     font-family: "HelveticaNeue";
     white-space: normal;
     text-align: center;
+
 }
 
 h2.mc-text-danger,
@@ -64,6 +65,8 @@ h3.mc-text-danger  {
     font-family: "HelveticaNeue";
     white-space: normal;
     text-align: left;
+    text-overflow: clip;
+
 }
 
 
@@ -358,7 +361,7 @@ h3.mc-text-danger  {
 
 .ui-li.ui-li-static.ui-body-inherit.ui-first-child.ui-last-child{
     background-color: #ffffff;
-    border-color: #d23838;
+    /*border-color: #d23838;*/
     color: #1d1d1d;
     font-style: normal;
     font-family: "HelveticaNeue-Light";
@@ -438,7 +441,10 @@ h3.mc-text-danger  {
 
 }
 
-.ui-header.ui-header-fixed h1 { color:#000; text-transform:uppercase;}
+.ui-header.ui-header-fixed h1 { color:#000000; text-transform:uppercase;}
+.ui-header.ui-header-fixed span{ color:#aeaeae; text-transform:uppercase;text-decoration: none; font-family: "HelveticaNeue-Light"; font-size:14px;font-weight: 100;font-style: normal; white-space: normal;text-align: center;margin-left: 80px;}
+.ui-header.ui-header-fixed span1{ color:#aeaeae; text-transform:uppercase;text-decoration: none; font-family: "HelveticaNeue-Light"; font-size:14px;font-weight: 100;font-style: normal; white-space: normal;text-align: center;margin-left: 100px;}
+
 .ui-header.ui-header-fixed { border-left:0; background:none; color:#000;}
 /*.ui-header.ui-header-fixed a.ui-btn-left::after { background:none;}*/
 /*.ui-header.ui-header-fixed a.ui-btn-left { border:none; background:url("../images/back_arrow.png") no-repeat 8px 4px !important; height:30px; width:30px;}*/
