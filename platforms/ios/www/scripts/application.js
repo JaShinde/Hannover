@@ -340,6 +340,7 @@ bindings: function(){
 				   });
 	
 	$(document).on('change','#frequency',function(e){
+				   e.preventDefault();
 				   B = $(this).val(); // or this.value
 				   console.log('selected value'+ B);
 				   app.displayRPN();
